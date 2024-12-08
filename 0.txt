@@ -1,0 +1,47 @@
+-- Hoisting: Refers to the JavaScript behavior of moving variable and function declarations to the top of their containing scope during the compilation phase. This allows variables to be referenced before they are declared, though if they are declared with var, they will be undefined until the actual line of assignment.
+
+-- TDZ (Temporal Dead Zone): The area between the start of a block scope and the point where a variable is declared with let or const. In the TDZ, accessing the variable before its declaration will throw a ReferenceError.
+
+-- Declaring with var: When a variable is declared with var, it is created as a property on the window object in the global scope.
+
+-- this Keyword: The value of this is dynamic; it refers to the context of the caller — in other words, the object that invokes the function. this behaves differently depending on where and how it is used.
+
+--Object Scoping and this: Objects do not create their own lexical scope. If you define a function (method) within an object and use this, this will typically refer to the global context or the function’s immediate caller, not the object itself, unless bound to it. This is why this may not behave as expected within methods in certain cases, especially if invoked in a way that doesn’t preserve the object’s context.
+
+--Accessing Nonexistent Properties: Attempting to access a property that doesn’t exist on an object will return undefined rather than throwing an error.
+
+--Avoid Using Arrow Functions as Methods in Objects: Arrow functions inherit this from their enclosing lexical scope and do not have their own this. This behavior can lead to this being undefined or pointing to the outer scope rather than the object itself, which makes arrow functions generally unsuitable for methods within an object.
+
+--Using this with Arrow Functions inside Methods: An arrow function inside a method of an object will inherit this from the enclosing method's context, which usually refers to the object itself. This behavior occurs because arrow functions do not have their own this, so they capture it from their surrounding lexical scope.
+
+
+-- Object.assign({}, anObject): This is called a shallow copy because it creates a new object with the properties of anObject, but only at the first level. In other words, if anObject contains nested objects (objects within objects), only references to those nested objects are copied, not their actual values. This means that if you modify a nested object, the changes will reflect in both the original and the copied object, as they are pointing to the same reference.
+
+
+-- Rename Object Properties during Destructuring: You can rename an object property when destructuring by assigning a new variable name.
+
+-- Set Default Values in Destructuring: You can assign a default value to an object property during destructuring, which will be used if the property is undefined.
+
+-- Destructure Inside Function Parameters: Destructuring can be directly applied to function parameters, simplifying the extraction of specific values from the arguments.
+
+-- Nested Destructuring of Objects: You can destructure nested objects within an object, allowing you to access deeply nested properties in a single line.
+
+-- Limitations with Spread Operator in Template Literals: The spread operator cannot be used within template literals, as they only accept a single string, not multiple comma-separated values.
+
+-- Create New Objects with Spread Operator: The spread operator can be used with objects to create a new object, copying all properties from an existing one and allowing for easy modification without altering the original.
+
+-- Spread Operator : Using it to unpack the object into individles values by using it on the right handside of the assignment operator.
+
+-- Rest Pattern : Using it ot pack the individules values to an object by using it on the right handside of the assigenment operator 
+
+-- || Returns the first truthy value it encounters. If all values are falsy, it returns the last falsy value.
+
+-- && Returns the first falsy value it encounters. If all values are truthy, it returns the last truthy value.
+
+-- Returns the first non-nullish value (not null or undefined).Unlike ||, it treats 0, false, and "" as valid (not falsy).
+
+-- ||= Assigns a value to a variable only if the current value is falsy.
+
+-- ??= Assigns a value to a variable only if the current value is null or undefined.
+
+-- &&= Assigns a value to a variable only if the current value is truthy
