@@ -1,0 +1,2 @@
+- forEach The forEach() method executes a callback function on each element in the iterator (like arrays, Maps, or Sets). Unlike map(), filter(), or reduce(), forEach() does not return a new array or any value. doesn’t modify the original array/collection unless explicitly mutated within the callback.
+

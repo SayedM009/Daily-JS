@@ -1,0 +1,9 @@
+- Find() Returns the first element in the array that satisfies the provided testing function. If no elements satisfy the condition, it returns undefined.
+
+- flat() Creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+
+- flatMap() First maps each element using a mapping function, then flattens the result into a new array. It’s similar to a combination of map() and flat() with depth 1.
+ 
+- some() Tests whether at least one element in the array passes the provided function. Returns true or false.
+
+- every() Tests whether all elements in the array pass the provided function. Returns true or false.

@@ -1,0 +1,12 @@
+- Number.isNaN()
+
+- Number.isFinite()
+
+- Number.isInteger()
+
+- Number.parseInt()
+
+- Number.parseFloat()
+
+- Number.toFixed()
+

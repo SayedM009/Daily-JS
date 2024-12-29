@@ -1,0 +1,7 @@
+- new Array(num) Creates a new array with a specified length. The elements in the array are empty slots and not undefined.
+
+- .fill(value, start, end) Fills elements of an array with a static value, starting from a specific index (start) to an end index (end). Both start and end are optional.
+
+- Array.from({length : num}, map call back) Creates a new array of a specified length and optionally maps over the elements during creation using the callback function.
+
+- Array.from(document.querySelectorAll()) This code snippet uses Array.from() to convert the NodeList returned by document.querySelectorAll() into a true JavaScript array.

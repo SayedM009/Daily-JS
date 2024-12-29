@@ -1,8 +1,14 @@
 -- Function Default Parameters.
 
--- Primitives (like numbers, strings, booleans) are always passed by value. Objects are passed by value too, but the value is a reference to the object in memory.So, while we often say objects are "passed by reference," technically, JavaScript passes a reference by value.
+-- Primitives (like numbers, strings, Booleans) are always passed by value. Objects are passed by value too, but the value is a reference to the object in memory. So, while we often say objects are "passed by reference," technically, JavaScript passes a reference by value.
 
 -- First-class functions in JavaScript mean that functions are values, You can assign them to variables, Store them in objects, Pass them as arguments, Return them from other functions, Even manipulate them as objects.
 - This flexibility makes JavaScript powerful and versatile, especially when working with functional programming patterns.
 
 -- Higher-Order functions the functions can passed as an argument to another function & function can return another function as a result.
+
+-- call It allows you to explicitly set the this value of a function and pass arguments individually. 
+
+-- apply It allows you to explicitly set the this value of a function and pass arguments individually as a list. 
+	
+-- The bind method in JavaScript is used to create a new function with a specific this value and, optionally, some initial arguments. It doesn't execute the function immediately but instead returns a new function that can be invoked later.
