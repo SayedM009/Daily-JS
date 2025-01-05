@@ -1,0 +1,9 @@
+- element.getBoundingClientRect() shows the place of element on the live screen.
+
+- getComputedStyle(elelment) : will return the all style properties that can applied on that element.
+
+- document.documentElement.style.setProperty("propertyname", "value') here you can change the root properties from here also
+
+- element.dataset : to get the data attribute value if you want to set element.dataset.nameInCamelCase.
+
+- element.scrollInfoView({behavior : smooth}) : once you run this line the screen to go to the target in a smooth way

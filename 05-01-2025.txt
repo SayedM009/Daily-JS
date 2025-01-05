@@ -1,0 +1,31 @@
+- document.addEventListener('DOMContentLoaded',function(e) {
+	// THE HTML PARSED AND DOM TREE BUILT
+})
+
+__This adds an event listener to the document for the DOMContentLoaded event.
+__The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, or subframes to finish loading.
+
+- window.addEventListener('load',function(e) {
+	// PAGE FULLY LOADED
+})
+
+__This adds an event listener for the load event on the window object.
+__The load event fires when the entire page is fully loaded, including:
+	__The HTML document.
+	__All associated resources (stylesheets, images, scripts, iframes, etc.).
+
+- window.addEventListener('beforeunload',function(e) {
+	e.preventDefault();
+	e.returnValue = ""
+})
+
+__ The beforeunload event is triggered when the user is about to leave the page (e.g., closing the tab, refreshing the page, or navigating to another URL).
+
+
+- Normal script in the end of the HTML body : HTML Parsing, Fetch JS, JS execution, HTML Parsing Finished
+
+- async script in the Head : HTML Parsing,    stop,    	HTML Parsing Finished
+			     JS Fetching, JS execution
+
+- defer script in the Head : HTML Parsing, HTML Parsing Finished, JS execution
+			     JS Fetching
